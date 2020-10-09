@@ -1,0 +1,17 @@
+<div class="tasks">
+  <p>
+  <strong>Title:</strong>
+  <%# renders a SINGLE task and turns the task title into a link %>
+  <%= link_to_unless_current task.title, task %>
+  </p>
+
+  <p>
+  <strong>Due date:</strong>
+  <%= task.due_date %>
+  </p>
+
+  <p>
+  <strong>Priority:</strong>
+  <%= task.priority %>
+  </p>
+</div>
